@@ -1,0 +1,214 @@
+<!-- <!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #171616;
+            overflow: auto;
+        }
+
+        .logo {
+            width: 200px;
+            color: #04AA6D;
+        }
+
+        .nav {
+            display: inline-block;
+        }
+
+        .nav2 {
+            float: right;
+            margin: 30px;
+        }
+
+        /* Navbar links */
+        .navbar a {
+
+            text-align: center;
+
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Navbar links on mouse-over */
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+        /* Current/active navbar link */
+        .active {
+            background-color: #04AA6D;
+        }
+
+        /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+
+        /* Dashboard */
+        .dasboard {
+            color: white;
+        }
+
+        /* Profile section */
+        #profile {}
+
+        .profile-img {
+            width: 80px;
+            border-radius: 50%;
+
+
+        }
+
+        .username {
+            width: 300px;
+            background-color: gray;
+            margin: 0;
+            height: 100vh;
+            float: left;
+        }
+
+        .user-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding: 25px;
+        }
+
+        hr {
+            width: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .username a:hover {
+            color: black;
+        }
+
+        .project {
+            margin: 5px 30px;
+            width: 72%;
+            float: right;
+            /* height: 600px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            
+        }
+
+        .pro {
+            margin: 8px;
+            padding: 5px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius:10px;
+            background-color: white;
+        }
+
+        .pro-img {
+            width: 100px;
+            float: left;
+        }
+
+        .project1 {
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav section -->
+    <div class="navbar">
+        <div class="nav">
+            <h1 class="logo"><i class="fa fa-fw fa-home"></i> Dot</h1>
+        </div>
+
+        <div class="nav nav2">
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Sign up</a>
+        </div>
+        <!-- //// Profile section -->
+        <div class="dasboard">
+            <i class="fa fa-fw fa-home"></i>
+            <button onclick="openprofile(event,'profile')">profile</button>
+        </div>
+    </div>
+
+
+    <div id="profile">
+
+        <div class="username project1">
+            <div class="user-data">
+                <img class="profile-img" src="user.avif" alt="">
+                <p>userXYZ</p>
+                <br>
+                <button>Edit Profile</button>
+                <hr>
+
+                <p>👥 Your profile</p>
+                <hr>
+                <br>
+
+                <a href="#">📄 Your project</a>
+                <br>
+                <a href="#">➕ Upload project</a>
+                <br>
+            </div>
+        </div>
+        <div class=" project1 project">
+            <h1>My projects</h1>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+        </div>
+    </div>
+    <!-- //// Profile section -->
+</body>
+
+</html> 

@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.dot</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            background-color:rgb(28, 28, 67);
+            color: #fff;
+            padding: 10px;
+            
+            
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        header h1 {
+            margin: 15px;
+            font-size: 25px;
+        }
+        
+        .navbar{
+            
+            /* background-color: #f0f0f0; */
+            /* border-radius: 5px;
+            margin: auto 10px;
+            width: 700px; */
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(28,28,67);
+            text-align: right;
+        }
+        
+        .navbar ul{
+            display: flex;
+            
+        }
+        
+        .navbar li{
+            /* list-style: none;
+            margin: 2px 20px; */
+
+            display: inline;
+             margin: 10px;
+             padding: 0px 10px;
+        }
+        
+        .navbar li a{
+            /* font-size: 17px;
+            color: black;
+            text-decoration: none;
+            padding: 3px 3px;
+            margin: 2px 2px; */
+
+            text-decoration: none;
+             color: #fff;
+            font-weight: bold;
+        }
+        
+        .navbar li a:hover{
+            color: rgb(106, 110, 127);
+        }
+        
+        
+        .search{
+            margin: auto;
+            width: 40%;
+            text-align: right;
+        }
+
+        #search{
+            font-size: 17px;
+            text-align: center;
+            /* padding: 2px 3px;
+            width: 90%; */
+            padding: 10px;
+             width: 60%;
+            border: 1px solid #ccc;
+           border-radius: 10px;
+        }
+        .section{
+            position: relative;
+            background: none;
+        }
+
+        .section::before{
+            content: "";
+            background-image: url("istockphoto-1475194345-1024x1024.jpg");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+        .container {
+            width: 800px;
+            height: 540px;
+            margin: 0 auto;
+            padding: 20px;
+            
+        }
+
+        .headlines{
+            text-align: center;
+        }
+
+        .container p{
+            text-align: center;
+            font-size: 20px;
+            /* font-weight: bold; */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(14, 14, 36);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: grey;
+            color: black;
+        }
+        footer {
+            background-color: rgb(14, 14, 36);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a{
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo .dot.png" alt="Website Logo">
+        <h1>.dot</h1>
+
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="login.html">Register/Login</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="Search here">
+            
+         
+        </div>
+        
+    </header>
+
+<section class="section">
+
+    <div class="container">
+        <h2 class="headlines">WELCOME TO .DOT</h2>
+        <h3 class="headlines">Connecting Students, Igniting Creativity, and Shaping the Future</h3>
+        <p>
+            At our platform, we foster creativity, collaboration, and innovation among students from diverse universities and colleges. Our mission is to provide a space where students can showcase their skills, share knowledge, and work together on exciting projects.
+        </p>
+        <p>
+            Whether you're a student, a professor, or an industry professional, you'll find a wealth of opportunities to engage, learn, and grow.
+        </p>
+        
+
+        <h3 class="headlines">Who We Are?</h3>
+        <p>We are a dynamic online platform designed to empower students from universities and colleges worldwide. We bring together a diverse community of students, mentors, and professionals to foster innovation and skill development</p>
+        <p>Joining our platform is easy. Simply sign up, create your profile, and explore the world of student projects</p>
+        <p>
+
+            <a class="btn" href="signup.html">Get started</a>
+            
+        </p>
+    </div>
+</section>
+    <footer>
+        &copy; 2023 Online Integrated Platform for Student Projects | <a href="#">Contact Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+</body>
+</html>

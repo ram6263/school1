@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+    <style>
+        body {
+            background-color:rgb(28, 28, 67);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .sign {
+           
+            text-align: center;
+            border-radius: 40px;
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+        }
+        .sign i{
+            size: 50px;
+        }
+
+        .login {
+            margin-top: 70px;
+            display:inline;
+            justify-content: center;
+            text-align: center;
+           
+            width: 400px;
+            height: 500px;
+            background-color: white;
+            border-radius:20px;
+            box-shadow: 4px 4px 8px 4px rgb(10, 10, 10),4px 6px 20px 4px rgb(11, 11, 11);
+         
+        }
+        form label{
+            font-weight: bold;
+        }
+
+        form input {
+          
+           border-radius: 4px;
+           height: 20px;
+           margin: 2px;
+           padding: 5px;
+           border: 2px solid gray;
+           font-size: 15px;
+           font-weight: 700;
+           
+        }
+        .form{
+            margin-top:50px;
+            border-radius: 5px;
+            text-align: center;
+            
+        }
+        .name{
+            margin-top: 10px;
+        }
+       
+
+        .create-account{
+            display: block;
+            text-align: center;
+            background-position: bottom;
+        }
+        .btn{
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: gray;
+            color: white;
+            font-size: 1.0rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(217, 222, 222);
+        }
+        .media a{
+            text-decoration: none;
+            border: 2px solid rgb(29, 24, 25);
+            width: 4000px;
+            color: white;
+            background-color: rgb(205, 28, 28);
+            margin: 5px;
+            padding: 3px;
+            font-weight: bold;
+        }
+        .icon{
+            position: absolute;
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="login">
+
+        <div class="form">
+        <form action="">
+            <div class="sign">
+                <i class="fas fa-user"></i>
+                <h2></i> Login</h2>
+            </div>
+            <div class="name">
+           <label for=""></label><br>
+           <input required spellcheck="false" type="text" placeholder="Enter your Email" >
+           
+        </div>
+            <div class="name">
+           <label for=""></label>
+           <br>
+           <input type="password" placeholder="Password" >
+        </div>
+           
+            <br> <br>
+            <div class="create-account">
+                <button class="btn"><a href="home.html">log in</a></button>
+                <br>
+                <p>if you have not account? <a href="/frontend/signup.html">create account</a></p>
+            </div>
+
+        </form>
+        <div class="media">
+            <p>or</p>
+
+           <a href="http://google.com"><i class="fab fa-google"></i> login  with    Google</a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

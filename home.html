@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            background-color: black;
+            color: rgb(16, 14, 14)c0c;
+            padding: 15px;
+            display: flex;
+
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+
+        .side-panel {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .side-panel a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-panel a:hover {
+            color: #f1f1f1;
+        }
+
+        .side-panel .close-btn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+
+        .open-btn {
+            font-size: 25px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .company-name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 8px;
+            width: 50%;
+            color: white;
+        }
+
+        .search-bar {
+            margin: 0 20px;
+            width: 30%;
+        }
+
+        #search {
+            width: 90%;
+            height: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .btn {
+            height: 30px;
+            text-align: center;
+            margin: 6px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: grey;
+            color: black;
+
+
+        }
+
+        .section {
+            width: 74%;
+            height: 750px;
+            margin: 15px;
+            padding-left: 10px;
+            float: right;
+            background-color: white;
+            /* border: 1px solid black; */
+
+        }
+
+        .aside {
+            width: 20%;
+            height: 750px;
+            /* margin: 15px; */
+            margin-left: 5px;
+            /* padding-left: 15px; */
+            padding-top: 15px;
+            /* border: 1px solid black; */
+            float: left;
+            background-color: white;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+
+
+
+        }
+
+        .aside h3 {
+            text-align: center;
+            /* font-size: 25px; */
+            text-decoration: underline;
+        }
+
+        .aside p {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .section h3 {
+            /* text-align: center; */
+            text-decoration: underline;
+            padding-left: 15px;
+
+        }
+
+        .container {
+            width: 800px;
+            height: 180px;
+            margin: 15px;
+            border: 2px solid grey;
+            padding: 15px;
+            border-radius: 8px;
+            /* background-color: rgb(183, 179, 179); */
+        }
+        .btn a{
+            text-decoration: none;
+            background-color: green;
+            color: white;
+        }
+
+  
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="open-btn" onclick="openSidePanel()">&#9776; </div>
+        <div class="company-name">.dot</div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Explore more projects">
+        </div>
+        <div class="navbar">
+
+            <button class="btn">Create +</button>
+
+            <button class="btn" ><a href="profile.html">My Profile</a></button>
+        </div>
+
+    </div>
+    <div>
+        <section class="section">
+            <h3>Uploaded Projects</h3>
+            <div class="container">
+                <span>abcd1801/trendy-news-app</span>
+                <p>Basic description of the project</p>
+                <br>
+
+                <p>Published on 28-07-2023</p>
+                <button class="btn">Visit
+                </button>
+            </div>
+
+            <div class="container">
+                <span>cdef1801/Expense-Tracker</span>
+                <p>Basic description of the project</p>
+                <br>
+
+                <p>Published on 28-07-2023</p>
+                <button class="btn">Visit
+                </button>
+            </div>
+
+            <div class="container">
+                <span>xyz1801/we-chat</span>
+                <p>Basic description of the project</p>
+                <br>
+
+                <p>Published on 28-07-2023</p>
+                <button class="btn">Visit
+                </button>
+            </div>
+        </section>
+
+        <aside class="aside">
+            <h3>Recent activity</h3>
+
+            <p>When you take actions across .dot, we’ll provide links to that activity here.</p>
+
+        </aside>
+    </div>
+
+
+    <div class="side-panel" id="sidePanel">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidePanel()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Discussions</a>
+        <a href="#">Notifications</a>
+    </div>
+
+    <!-- profile section -->
+    
+
+    <script>
+        function openSidePanel() {
+            document.getElementById("sidePanel").style.width = "250px";
+        }
+
+        function closeSidePanel() {
+            document.getElementById("sidePanel").style.width = "0";
+        }
+
+        
+    </script>
+
+</body>
+
+</html>

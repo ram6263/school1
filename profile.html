@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        /* header section */
+        .header {
+            background-color: black;
+            color: rgb(16, 14, 14)c0c;
+            padding: 15px;
+            display: flex;
+
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+
+        .side-panel {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .side-panel a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-panel a:hover {
+            color: #f1f1f1;
+        }
+
+        .side-panel .close-btn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+
+        .open-btn {
+            font-size: 25px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .company-name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 8px;
+            width: 50%;
+            color: white;
+        }
+
+        .search-bar {
+            margin: 0 20px;
+            width: 30%;
+        }
+
+        #search {
+            width: 90%;
+            height: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .btn {
+            height: 30px;
+            text-align: center;
+            margin: 6px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: grey;
+            color: black;
+
+
+        }
+
+              /* profile style */
+              .profile-img {
+            width: 80px;
+            border-radius: 50%;
+
+
+        }
+
+        .username {
+            width: 300px;
+            background-color: black;
+            margin: 0;
+            height: 100vh;
+            float: left;
+        }
+
+        .user-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding: 25px;
+        }
+
+        hr {
+            width: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        
+
+        .project {
+            margin: 5px 30px;
+            width: 72%;
+            float: right;
+            /* height: 600px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            
+        }
+
+        .pro {
+            margin:10px;
+            padding: 5px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius:10px;
+            background-color: white;
+            color: black;
+        }
+
+        .pro-img {
+            width: 100px;
+            float: left;
+        }
+
+        .project1 {
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="open-btn" onclick="openSidePanel()">&#9776; </div>
+        <div class="company-name">.dot</div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Explore more projects">
+        </div>
+        <div class="navbar">
+
+            <button class="btn">Create +</button>
+
+            <button class="btn" ><a href="home.html">My Profile</a></button>
+        </div>
+
+    </div>
+    <div class="side-panel" id="sidePanel">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidePanel()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Discussions</a>
+        <a href="#">Notifications</a>
+    </div>
+    <div id="profile" class="profi">
+
+        <div class="username project1">
+            <div class="user-data">
+                <img class="profile-img" src="user.avif" alt="">
+                <p>userXYZ</p>
+                <br>
+                <button>Edit Profile</button>
+                <hr>
+
+                <p>👥 Your profile</p>
+                <hr>
+                <br>
+
+                <a href="#">📄 Your project</a>
+                <br>
+                <a href="#">➕ Upload project</a>
+                <br>
+            </div>
+        </div>
+        <div class=" project1 project">
+            <h1>My projects</h1>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+            <div class="pro">
+                <img class="pro-img" src="project1.avif" alt="">
+                <h3>project title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, eaque. Nulla culpa quas expedita
+                    aspernatur commodi, eius minima dolore </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openSidePanel() {
+            document.getElementById("sidePanel").style.width = "250px";
+        }
+
+        function closeSidePanel() {
+            document.getElementById("sidePanel").style.width = "0";
+        }
+
+        
+    </script>
+</body>
+</html>
